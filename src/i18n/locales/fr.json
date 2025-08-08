@@ -1,0 +1,487 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "about": "À propos",
+    "testimonials": "Témoignages",
+    "contact": "Contact",
+    "book": "Réserver"
+  },
+  "hero": {
+    "title": "Transformez Votre",
+    "titleHighlight": "Bien-être",
+    "subtitle": "Coach sportif diplômé sur la Côte d'Azur. Ancien sportif de haut niveau, je vous accompagne avec une approche holistique alliant corps et esprit pour votre transformation.",
+    "cta": {
+      "primary": "Commencer Maintenant",
+      "secondary": "Découvrir les Services"
+    },
+    "stats": {
+      "clients": "Clients Transformés",
+      "experience": "Années d'Expérience", 
+      "success": "Taux de Réussite"
+    },
+    "freeSession": {
+      "title": "Séance Découverte Gratuite",
+      "description": "Évaluation complète, plan d'entraînement personnalisé et conseils nutrition.",
+      "features": {
+        "assessment": "Bilan physique complet",
+        "program": "Programme sur-mesure",
+        "nutrition": "Conseils nutrition",
+        "followup": "Suivi personnalisé"
+      },
+      "cta": "Réserver Maintenant"
+    }
+  },
+  "services": {
+    "title": "Mes",
+    "titleHighlight": "Services",
+    "subtitle": "Une approche holistique combinant renforcement musculaire, mobilité, Pilates, yoga, méditation et coaching mental.",
+    "items": {
+      "personal": {
+        "title": "Coaching Individuel",
+        "description": "Séances personnalisées alliant renforcement, mobilité et bien-être mental. Approche holistique adaptée à vos besoins.",
+        "features": {
+          "custom": "Méthode holistique",
+          "psychology": "Coaching mental", 
+          "mobility": "Mobilité & Pilates",
+          "mindfulness": "Yoga & méditation"
+        },
+        "price": "À partir de 50€/séance",
+        "prices": {
+          "single": "70€/séance",
+          "pack5": "60€/séance (pack 5)",
+          "pack10": "50€/séance (pack 10)"
+        }
+      },
+      "group": {
+        "title": "Coaching Collectif", 
+        "description": "Séances en petit groupe (max 5 personnes) pour maintenir un suivi de qualité tout en bénéficiant de l'émulation collective.",
+        "features": {
+          "small": "Max 5 personnes",
+          "quality": "Suivi personnalisé",
+          "affordable": "Prix accessible", 
+          "motivation": "Émulation collective"
+        },
+        "price": "25€/séance"
+      },
+      "online": {
+        "title": "Coaching en Ligne",
+        "description": "Programmes d'entraînement personnalisés à faire chez vous avec suivi vidéo.",
+        "features": {
+          "flexibility": "Flexibilité horaire",
+          "video": "Suivi vidéo",
+          "nutrition": "Plans nutrition",
+          "support": "Support 7j/7"
+        },
+        "price": "35€/mois"
+      },
+      "corporate": {
+        "title": "Interventions Entreprises",
+        "description": "Séances de bien-être en entreprise, associations et résidences seniors. Amélioration de la qualité de vie au travail.",
+        "features": {
+          "corporate": "Entreprises",
+          "associations": "Associations",
+          "seniors": "Résidences seniors",
+          "wellbeing": "Bien-être collectif"
+        },
+        "price": "Sur devis"
+      }
+    },
+    "choose": "Choisir ce service",
+    "unsure": {
+      "title": "Pas sûr du service qui vous convient ?",
+      "subtitle": "Discutons de vos objectifs lors d'un appel gratuit de 15 minutes",
+      "cta": "Appel Gratuit"
+    }
+  },
+  "about": {
+    "title": "👤 Qui suis-je ?",
+    "titleHighlight": "",
+    "name": "Gilson Mendes",
+    "role": "Coach Sportif Diplômé",
+    "location": "Côte d'Azur",
+    "availability": "Disponible 7j/7",
+    "hours": "6h - 21h",
+    "bio": {
+      "p1": "Coach sportif diplômé, passionné par la transformation physique et le bien-être. Ancien sportif de haut niveau, animé par la discipline, le goût de l'effort et la recherche de progression, j'ai décidé de mettre mon expérience et mes compétences au service de ceux qui veulent se sentir mieux dans leur corps et dans leur esprit.",
+      "p2": "Mon approche : Holistique et personnalisée, elle allie performance, bien-être et équilibre mental pour une transformation durable.",
+      "p3": "Chaque personne est unique et mérite un accompagnement sur-mesure. Que vous souhaitiez perdre du poids, gagner en muscle ou simplement vous sentir mieux dans votre corps, nous trouverons ensemble la méthode qui vous convient."
+    },
+    "achievements": {
+      "certifications": {
+        "title": "🎓 Formations",
+        "items": ["Licence en psychologie", "Formations en yoga et Pilates", "BPJEPS Activités de la Forme"]
+      },
+      "specializations": {
+        "title": "💪 Spécialités", 
+        "items": ["Renforcement musculaire", "Mobilité", "Pilates & yoga", "Méditation", "Coaching mental"]
+      },
+      "philosophy": {
+        "title": "🔎 Mon Approche",
+        "items": ["Équilibre corps et esprit en harmonie", "Personnalisation adaptée à vos objectifs", "Transformation durable et bienveillante"]
+      }
+    },
+    "cta": "Commençons Ensemble"
+  },
+  "contact": {
+    "title": "Commençons Votre",
+    "titleHighlight": "Transformation",
+    "subtitle": "Prêt à atteindre vos objectifs ? Contactez-moi dès maintenant pour une séance découverte gratuite.",
+    "form": {
+      "title": "Séance Découverte Gratuite",
+      "fields": {
+        "name": "Nom complet",
+        "email": "Email",
+        "phone": "Téléphone", 
+        "service": "Service souhaité",
+        "message": "Parlez-moi de vos objectifs",
+        "namePlaceholder": "Votre nom complet",
+        "emailPlaceholder": "votre@email.com",
+        "phonePlaceholder": "06 12 34 56 78",
+        "servicePlaceholder": "Sélectionnez un service",
+        "messagePlaceholder": "Ajoutez des détails : votre niveau actuel, vos disponibilités, contraintes particulières, expériences passées..."
+      },
+      "objectives": {
+        "title": "Sélectionnez vos objectifs (cliquez pour ajouter) :",
+        "help": "Plus vous êtes précis, plus je pourrai vous proposer un programme adapté !",
+        "selected": "objectif sélectionné",
+        "selectedPlural": "objectifs sélectionnés"
+      },
+      "submit": {
+        "idle": "🚀 Réserver ma séance gratuite",
+        "submitting": "⏳ Envoi en cours...",
+        "success": "✅ Message envoyé !",
+        "error": "❌ Erreur - Réessayer"
+      }
+    },
+    "objectives": [
+      "💪 Prendre du muscle",
+      "⚖️ Perdre du poids", 
+      "🏃‍♀️ Améliorer ma condition physique",
+      "🩹 Reprendre après une blessure",
+      "👰 Préparer un événement (mariage, vacances...)",
+      "😌 Réduire le stress",
+      "🧘‍♀️ Améliorer ma posture",
+      "🔄 Reprendre le sport après une pause",
+      "💯 Gagner en confiance en soi",
+      "🏋️‍♀️ Améliorer ma force",
+      "🎯 Perdre du ventre",
+      "✨ Tonifier mon corps",
+      "🫁 Améliorer mon endurance",
+      "🥗 Corriger mes habitudes alimentaires",
+      "📅 Me motiver à faire du sport régulièrement",
+      "🏆 Atteindre mes objectifs rapidement"
+    ],
+    "info": {
+      "title": "Informations de Contact",
+      "location": {
+        "title": "Localisation",
+        "lines": ["Côte d'Azur", "Déplacements possibles"]
+      },
+      "phone": {
+        "title": "Téléphone",
+        "lines": ["06 17 04 35 99", "Appels & WhatsApp"]
+      },
+      "email": {
+        "title": "Email", 
+        "lines": ["gilson.mendes.coach@gmail.com", "Réponse sous 24h"]
+      },
+      "hours": {
+        "title": "Horaires",
+        "lines": ["Lun-Dim : 6h - 21h", "Flexibilité selon vos besoins"]
+      }
+    },
+    "offer": {
+      "title": "🎁 Offre Spéciale",
+      "description": "Séance découverte gratuite pour tous les nouveaux clients. Une évaluation complète et un programme personnalisé offerts !",
+      "features": {
+        "duration": "Durée : 1h",
+        "location": "À domicile ou en salle", 
+        "commitment": "Sans engagement"
+      }
+    },
+    "social": {
+      "title": "📱 Réseaux Sociaux",
+      "description": "Suivez mes conseils et transformations quotidiennes"
+    },
+    "map": {
+      "description": "Découvrez les différents lieux où nous pouvons nous entraîner ensemble. Je me déplace également à votre domicile dans toute la région parisienne.",
+      "note": "📍 Déplacements possibles dans un rayon de 30km autour de Paris"
+    }
+  },
+  "map": {
+    "title": "Lieux de séances",
+    "subtitle": "Différents lieux d'entraînement disponibles",
+    "features": "Caractéristiques",
+    "directions": "Obtenir l'itinéraire",
+    "locations_count": "lieux disponibles",
+    "travel": {
+      "title": "Zone de déplacement",
+      "description": "Je me déplace dans toute la région parisienne pour les séances à domicile. Rayon de déplacement jusqu'à 30km autour de Paris."
+    },
+    "locations": {
+      "gym1": {
+        "name": "Salle Premium Fitness",
+        "address": "15 Rue de Rivoli, 75001 Paris",
+        "type": "Salle de sport partenaire",
+        "features": ["Équipements complets", "Coaching individuel", "Suivi nutritionnel"]
+      },
+      "park": {
+        "name": "Parc des Tuileries",
+        "address": "Place de la Concorde, 75001 Paris", 
+        "type": "Entraînement en extérieur",
+        "features": ["Training outdoor", "Course à pied", "Exercices fonctionnels"]
+      },
+      "home": {
+              "name": "Coaching à domicile",
+              "address": "Côte d'Azur (Mouans-Sartoux, Cannes et environs)",
+      "type": "Déplacement à domicile",
+      "features": ["Chez vous", "Équipement fourni", "Flexible"]
+      }
+    }
+  },
+  "footer": {
+    "description": "Votre coach sportif professionnel pour une transformation durable. Ensemble, atteignons vos objectifs de forme et de bien-être.",
+    "location": "Côte d'Azur",
+    "phone": "+33 6 XX XX XX XX",
+    "email": "gilson.mendes.coach@gmail.com",
+    "sections": {
+      "services": "Services",
+      "navigation": "Navigation",
+      "connect": "Restez Connecté"
+    },
+    "newsletter": {
+      "description": "Recevez mes conseils fitness et nutrition chaque semaine",
+      "placeholder": "Votre email",
+      "submit": "OK"
+    },
+    "social": {
+      "title": "Suivez-moi"
+    },
+    "legal": {
+      "mentions": "Mentions Légales",
+      "terms": "Conditions Générales", 
+      "privacy": "Politique de Confidentialité",
+      "cookies": "Cookies"
+    },
+    "copyright": "Tous droits réservés.",
+    "backToTop": "Retour en haut"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite",
+    "retry": "Réessayer",
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "required": "Requis"
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "email": "Email invalide",
+    "phone": "Numéro de téléphone invalide",
+    "minLength": "Minimum {{count}} caractères",
+    "maxLength": "Maximum {{count}} caractères"
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre", 
+    "system": "Système"
+  },
+  "language": {
+    "french": "Français",
+    "english": "English"
+  },
+  "testimonials": {
+    "title": "Témoignages",
+    "subtitle": "Découvrez les transformations inspirantes de mes clients et leurs retours sur mon accompagnement.",
+    "loading": "Chargement des témoignages...",
+    "filters": {
+      "featured": "Coup de cœur",
+      "all": "Tous",
+      "video": "Vidéos",
+      "beforeAfter": "Avant/Après",
+      "fiveStars": "5 étoiles"
+    },
+    "stats": {
+      "testimonials": "Témoignages",
+      "averageRating": "Note moyenne",
+      "videos": "Vidéos",
+      "beforeAfter": "Avant/Après"
+    },
+    "tags": {
+      "popular": "Tags populaires :"
+    },
+    "cta": {
+      "title": "Prêt à rejoindre mes clients satisfaits ?",
+      "subtitle": "Commencez votre transformation dès aujourd'hui avec un accompagnement personnalisé et des résultats prouvés.",
+      "button": "Commencer mon parcours"
+    },
+    "modal": {
+      "title": "Témoignage détaillé"
+    },
+    "empty": {
+      "title": "Aucun témoignage trouvé",
+      "subtitle": "Essayez un autre filtre ou revenez plus tard."
+    },
+    "video": {
+      "play": "Lire la vidéo",
+      "transcript": "Transcription",
+      "duration": "Durée"
+    },
+    "beforeAfter": {
+      "before": "AVANT",
+      "after": "APRÈS",
+      "instruction": "👆 Glissez pour comparer"
+    },
+    "results": {
+      "title": "Résultats obtenus",
+      "weightLoss": "kg perdus",
+      "muscleGain": "kg de muscle",
+      "bodyFatReduction": "% de graisse",
+      "goals": "Objectifs atteints :"
+    },
+    "badges": {
+      "verified": "Vérifié",
+      "featured": "Coup de cœur"
+    }
+  },
+  "booking": {
+    "title": "Réserver une",
+    "titleHighlight": "Séance",
+    "subtitle": "Choisissez votre service, votre créneau et réservez en ligne. Confirmation immédiate par email.",
+    "services": {
+      "title": "Choisissez votre service",
+      "personal": "Coaching Individuel",
+      "duo": "Coaching Duo", 
+      "group": "Coaching Collectif"
+    },
+    "datetime": {
+      "date": "Date souhaitée",
+      "time": "Horaire"
+    },
+    "client": {
+      "title": "Vos informations",
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "notes": "Notes (optionnel)",
+      "notesPlaceholder": "Objectifs, contraintes, questions...",
+      "suggestions": "Suggestions rapides :"
+    },
+    "notesSuggestions": [
+      "🎯 Objectif de remise en forme",
+      "🏃‍♀️ Préparation d'un événement", 
+      "💪 Gain de masse musculaire",
+      "⚖️ Perte de poids",
+      "🏃 Préparation marathon/course",
+      "🤕 Rééducation post-blessure",
+      "🧘 Amélioration souplesse",
+      "👥 Séance en couple/famille",
+      "🏋️ Découverte musculation",
+      "🍎 Conseils nutrition inclus"
+    ],
+    "submit": "Confirmer la Réservation",
+    "success": "Réservation envoyée avec succès !"
+  },
+  "footer": {
+    "brand": {
+      "name": "GILSON MENDES",
+      "description": "Coach sportif diplômé sur la Côte d'Azur. Une approche holistique pour votre bien-être physique et mental.",
+      "location": "Côte d'Azur",
+      "phone": "06 17 04 35 99",
+      "email": "gilson.mendes-landim@hotmail.com"
+    },
+    "services": {
+      "title": "Services",
+      "personal": "Coaching Individuel",
+      "group": "Coaching Collectif", 
+      "online": "Programmes en Ligne",
+      "corporate": "Interventions Entreprises"
+    },
+    "navigation": {
+      "title": "Navigation",
+      "about": "À Propos",
+      "services": "Services",
+      "contact": "Contact",
+      "testimonials": "Témoignages"
+    },
+    "newsletter": {
+      "title": "Restez Connecté",
+      "description": "Recevez mes conseils fitness et nutrition chaque semaine",
+      "placeholder": "Votre email",
+      "submit": "OK",
+      "social": "Suivez-nous"
+    },
+    "legal": {
+      "copyright": "Tous droits réservés.",
+      "terms": "Mentions Légales",
+      "conditions": "Conditions Générales", 
+      "privacy": "Politique de Confidentialité",
+      "cookies": "Cookies"
+    },
+    "backToTop": "Retour en haut"
+  },
+  "contact": {
+    "title": "Commençons Votre",
+    "titleHighlight": "Transformation",
+    "subtitle": "Prêt à atteindre vos objectifs ? Contactez-moi dès maintenant pour une séance découverte gratuite.",
+    "form": {
+      "title": "Séance Découverte Gratuite",
+      "name": "Nom complet",
+      "phone": "Téléphone",
+      "email": "Email", 
+      "service": "Service souhaité",
+      "message": "Message",
+      "messagePlaceholder": "Ajoutez des détails : votre niveau actuel, vos disponibilités, contraintes particulières, expériences passées...",
+      "messageHint": "💬 Plus vous êtes précis, plus je pourrai vous proposer un programme adapté !",
+      "submit": "🚀 Réserver ma séance gratuite",
+      "submitting": "⏳ Envoi en cours...",
+      "success": "✅ Message envoyé !",
+      "error": "❌ Erreur - Réessayer"
+    },
+    "objectives": [
+      "💪 Prendre du muscle",
+      "⚖️ Perdre du poids",
+      "🏃‍♀️ Améliorer ma condition physique", 
+      "🩹 Reprendre après une blessure",
+      "👰 Préparer un événement (mariage, vacances...)",
+      "😌 Réduire le stress",
+      "🧘‍♀️ Améliorer ma posture",
+      "🔄 Reprendre le sport après une pause",
+      "💯 Gagner en confiance en soi",
+      "🏋️‍♀️ Améliorer ma force",
+      "🎯 Perdre du ventre",
+      "✨ Tonifier mon corps",
+      "🫁 Améliorer mon endurance",
+      "🥗 Corriger mes habitudes alimentaires",
+      "📅 Me motiver à faire du sport régulièrement",
+      "🏆 Atteindre mes objectifs rapidement"
+    ],
+    "info": {
+      "title": "Informations de Contact",
+      "offer": {
+        "title": "🎁 Offre Spéciale",
+        "description": "Première séance d'évaluation 100% gratuite pour tous les nouveaux clients. Aucun engagement, découvrez ma méthode sans risque !",
+        "features": "⭐ Bilan complet • 📋 Plan personnalisé • 🥗 Conseils nutrition"
+      }
+    },
+    "social": {
+      "title": "Réseaux Sociaux",
+      "description": "Suivez mes conseils et découvrez les transformations de mes clients"
+    },
+    "map": {
+      "description": "Découvrez les différents lieux où nous pouvons nous entraîner ensemble. Je me déplace également à votre domicile dans toute la région parisienne."
+    }
+  },
+  "map": {
+    "title": "Lieux de séances"
+  },
+  "validation": {
+    "required": "Ce champ est requis",
+    "email": "Email invalide"
+  }
+}

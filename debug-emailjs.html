@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug EmailJS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <h1>Test EmailJS Configuration</h1>
+    
+    <button onclick="testEmailJS()">Test EmailJS</button>
+    <div id="result"></div>
+
+    <script>
+        // Vos identifiants EmailJS
+        const SERVICE_ID = 'service_kkc0gz7';
+        const COACH_TEMPLATE_ID = 'template_cw3v3oy';
+        const CLIENT_TEMPLATE_ID = 'template_zjtnp3j';
+        const PUBLIC_KEY = 'JYVZuZEWM9bElEb_B';
+
+        async function testEmailJS() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = 'Testing...';
+            
+            try {
+                // Initialize EmailJS
+                emailjs.init(PUBLIC_KEY);
+                
+                // Test data
+                const templateParams = {
+                    name: 'Test User',
+                    email: 'test@example.com',
+                    phone: '0123456789',
+                    service: 'Coaching Individuel',
+                    message: 'Ceci est un test',
+                    date: new Date().toLocaleDateString('fr-FR'),
+                    time: new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' }),
+                    to_email: 'gilson.mendes@gmail.com'
+                };
+
+                console.log('🧪 Testing with params:', templateParams);
+
+                // Test 1: Coach email
+                console.log('📧 Testing coach email...');
+                const coachResult = await emailjs.send(
+                    SERVICE_ID,
+                    COACH_TEMPLATE_ID,
+                    templateParams
+                );
+                console.log('✅ Coach email result:', coachResult);
+
+                // Test 2: Client email
+                console.log('📧 Testing client email...');
+                const clientResult = await emailjs.send(
+                    SERVICE_ID,
+                    CLIENT_TEMPLATE_ID,
+                    {
+                        name: templateParams.name,
+                        email: templateParams.email,
+                        phone: templateParams.phone,
+                        service: templateParams.service,
+                        message: templateParams.message,
+                        date: templateParams.date,
+                        time: templateParams.time
+                    }
+                );
+                console.log('✅ Client email result:', clientResult);
+
+                resultDiv.innerHTML = `
+                    <h2>✅ SUCCESS!</h2>
+                    <p>Coach email status: ${coachResult.status}</p>
+                    <p>Client email status: ${clientResult.status}</p>
+                    <p>Check console for details</p>
+                `;
+
+            } catch (error) {
+                console.error('❌ EmailJS Error:', error);
+                resultDiv.innerHTML = `
+                    <h2>❌ ERROR</h2>
+                    <p>${error.message}</p>
+                    <pre>${JSON.stringify(error, null, 2)}</pre>
+                `;
+            }
+        }
+    </script>
+</body>
+</html>

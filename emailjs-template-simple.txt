@@ -1,0 +1,31 @@
+🎯 NOUVELLE DEMANDE - SÉANCE DÉCOUVERTE GRATUITE
+
+═══════════════════════════════════════
+
+👤 CLIENT
+Nom: {{name}}
+Email: {{email}}
+Téléphone: {{phone}}
+
+💪 SERVICE DEMANDÉ
+{{service}}
+
+💬 MESSAGE / OBJECTIFS
+{{message}}
+
+═══════════════════════════════════════
+
+⚡ ACTIONS RAPIDES:
+📧 Répondre: {{email}}
+📞 Appeler: {{phone}}
+💬 WhatsApp: https://wa.me/33617043599
+
+═══════════════════════════════════════
+
+🌐 Envoyé depuis le site GML Fitness
+⏰ Le {{date}} à {{time}}
+
+---
+Gilson Mendes - Coach Sportif
+Côte d'Azur | 06 17 04 35 99
+https://jonasvihoaleaniglo.github.io/gml-fitness-website/

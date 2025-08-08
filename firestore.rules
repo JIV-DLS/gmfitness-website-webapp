@@ -1,0 +1,177 @@
+// 🔐 Règles de sécurité Firestore pour GM Fitness
+// Ces règles protègent vos données côté serveur
+
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // 👤 Collection des utilisateurs
+    match /users/{userId} {
+      // Les utilisateurs peuvent lire et écrire leurs propres données
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+      
+      // Les admins peuvent lire tous les profils
+      allow read: if request.auth != null && 
+                     get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+    
+    // 💬 Collection des témoignages
+    match /testimonials/{testimonialId} {
+      // Lecture: tout le monde peut lire les témoignages publics
+      allow read: if resource.data.isPublic == true;
+      
+      // Écriture: utilisateurs authentifiés seulement
+      allow create: if request.auth != null &&
+                       validateTestimonialData(request.resource.data) &&
+                       request.resource.data.createdBy == request.auth.uid;
+      
+      // Mise à jour: seulement le créateur ou un admin
+      allow update: if request.auth != null && (
+                       resource.data.createdBy == request.auth.uid ||
+                       isAdmin(request.auth.uid)
+                    ) && validateTestimonialData(request.resource.data);
+      
+      // Suppression: seulement le créateur ou un admin
+      allow delete: if request.auth != null && (
+                       resource.data.createdBy == request.auth.uid ||
+                       isAdmin(request.auth.uid)
+                    );
+    }
+    
+    // 🎥 Collection des vidéos de coaching
+    match /coaching_videos/{videoId} {
+      // Lecture: selon la visibilité
+      allow read: if resource.data.isPublic == true ||
+                     (request.auth != null && resource.data.createdBy == request.auth.uid) ||
+                     (request.auth != null && isAdmin(request.auth.uid));
+      
+      // Écriture: admins et coaches seulement
+      allow create, update: if request.auth != null && 
+                               (isAdmin(request.auth.uid) || isCoach(request.auth.uid)) &&
+                               validateVideoData(request.resource.data);
+      
+      // Suppression: créateur ou admin
+      allow delete: if request.auth != null && (
+                       resource.data.createdBy == request.auth.uid ||
+                       isAdmin(request.auth.uid)
+                    );
+    }
+    
+    // 📊 Collection des statistiques (lecture seule pour les admins)
+    match /stats/{statId} {
+      allow read: if request.auth != null && isAdmin(request.auth.uid);
+      allow write: if false; // Les stats sont générées par Cloud Functions
+    }
+    
+    // 📅 Collection des réservations
+    match /bookings/{bookingId} {
+      // Les utilisateurs peuvent voir leurs propres réservations
+      allow read: if request.auth != null && (
+                     resource.data.clientId == request.auth.uid ||
+                     isAdmin(request.auth.uid) ||
+                     isCoach(request.auth.uid)
+                  );
+      
+      // Création: utilisateurs authentifiés
+      allow create: if request.auth != null &&
+                       request.resource.data.clientId == request.auth.uid &&
+                       validateBookingData(request.resource.data);
+      
+      // Mise à jour: client propriétaire, coach ou admin
+      allow update: if request.auth != null && (
+                       resource.data.clientId == request.auth.uid ||
+                       isAdmin(request.auth.uid) ||
+                       isCoach(request.auth.uid)
+                    );
+      
+      // Suppression: admins seulement
+      allow delete: if request.auth != null && isAdmin(request.auth.uid);
+    }
+    
+    // 🔧 Fonctions utilitaires pour la validation
+    function isAdmin(uid) {
+      return exists(/databases/$(database)/documents/users/$(uid)) &&
+             get(/databases/$(database)/documents/users/$(uid)).data.role == 'admin';
+    }
+    
+    function isCoach(uid) {
+      return exists(/databases/$(database)/documents/users/$(uid)) &&
+             get(/databases/$(database)/documents/users/$(uid)).data.role in ['admin', 'coach'];
+    }
+    
+    function validateTestimonialData(data) {
+      return data.keys().hasAll(['clientName', 'rating', 'content', 'serviceType', 'isPublic']) &&
+             data.rating is number &&
+             data.rating >= 1 && data.rating <= 5 &&
+             data.content is string &&
+             data.content.size() >= 10 && data.content.size() <= 1000 &&
+             data.clientName is string &&
+             data.clientName.size() >= 2 && data.clientName.size() <= 100 &&
+             data.isPublic is bool;
+    }
+    
+    function validateVideoData(data) {
+      return data.keys().hasAll(['title', 'category', 'isPublic']) &&
+             data.title is string &&
+             data.title.size() >= 5 && data.title.size() <= 200 &&
+             data.category in ['workout', 'nutrition', 'motivation', 'technique', 'testimonial', 'behind_scenes', 'q_and_a'] &&
+             data.isPublic is bool;
+    }
+    
+    function validateBookingData(data) {
+      return data.keys().hasAll(['serviceType', 'preferredDate', 'status']) &&
+             data.serviceType is string &&
+             data.preferredDate is timestamp &&
+             data.status in ['pending', 'confirmed', 'cancelled', 'completed'];
+    }
+  }
+}
+
+// 🗄️ Règles pour Firebase Storage
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // 🎥 Dossier des vidéos
+    match /videos/{allPaths=**} {
+      // Lecture: tout le monde (pour les vidéos publiques)
+      allow read: if true;
+      
+      // Écriture: utilisateurs authentifiés seulement
+      allow write: if request.auth != null &&
+                      validateFileUpload() &&
+                      request.resource.size < 100 * 1024 * 1024; // 100MB max
+    }
+    
+    // 📸 Dossier des images
+    match /images/{allPaths=**} {
+      // Lecture: tout le monde
+      allow read: if true;
+      
+      // Écriture: utilisateurs authentifiés
+      allow write: if request.auth != null &&
+                      validateImageUpload() &&
+                      request.resource.size < 10 * 1024 * 1024; // 10MB max
+    }
+    
+    // 👤 Dossier des avatars utilisateurs
+    match /avatars/{userId}/{allPaths=**} {
+      // Lecture: tout le monde
+      allow read: if true;
+      
+      // Écriture: propriétaire seulement
+      allow write: if request.auth != null &&
+                      request.auth.uid == userId &&
+                      validateImageUpload() &&
+                      request.resource.size < 5 * 1024 * 1024; // 5MB max
+    }
+    
+    function validateFileUpload() {
+      return request.resource.contentType.matches('video/.*') ||
+             request.resource.contentType.matches('image/.*');
+    }
+    
+    function validateImageUpload() {
+      return request.resource.contentType in ['image/jpeg', 'image/png', 'image/jpg', 'image/webp'];
+    }
+  }
+}

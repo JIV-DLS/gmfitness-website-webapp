@@ -1,0 +1,487 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "book": "Book Now"
+  },
+  "hero": {
+    "title": "Transform Your",
+    "titleHighlight": "Body",
+    "subtitle": "Professional fitness coach with 8+ years of experience. Personalized coaching, custom programs and nutritional guidance to reach your goals quickly.",
+    "cta": {
+      "primary": "Start Now",
+      "secondary": "Discover Services"
+    },
+    "stats": {
+      "clients": "Clients Transformed",
+      "experience": "Years of Experience",
+      "success": "Success Rate"
+    },
+    "freeSession": {
+      "title": "Free Discovery Session",
+      "description": "Complete assessment, personalized training plan and nutrition advice.",
+      "features": {
+        "assessment": "Complete physical assessment",
+        "program": "Custom program",
+        "nutrition": "Nutrition advice",
+        "followup": "Personalized follow-up"
+      },
+      "cta": "Book Now"
+    }
+  },
+  "services": {
+    "title": "My",
+    "titleHighlight": "Services",
+    "subtitle": "Solutions adapted to all needs and budgets to accompany you towards your fitness and wellness goals.",
+    "items": {
+      "personal": {
+        "title": "Personal Training",
+        "description": "Personalized sessions combining strength, mobility, and mental well-being. Holistic approach adapted to your needs.",
+        "features": {
+          "custom": "Holistic method",
+          "psychology": "Mental coaching", 
+          "mobility": "Mobility & Pilates",
+          "mindfulness": "Yoga & meditation"
+        },
+        "price": "From €50/session",
+        "prices": {
+          "single": "€70/session",
+          "pack5": "€60/session (pack of 5)",
+          "pack10": "€50/session (pack of 10)"
+        }
+      },
+      "group": {
+        "title": "Group Training", 
+        "description": "Small group sessions (max 5 people) to maintain quality follow-up while benefiting from collective motivation.",
+        "features": {
+          "small": "Max 5 people",
+          "quality": "Personalized follow-up",
+          "affordable": "Affordable price", 
+          "motivation": "Group motivation"
+        },
+        "price": "€25/session"
+      },
+      "online": {
+        "title": "Online Programs",
+        "description": "Personalized training programs to do at home with videos, plans, and accompaniment.",
+        "features": {
+          "videos": "Exercise videos",
+          "plans": "Training plans",
+          "support": "Personal accompaniment",
+          "flexible": "Flexible schedule"
+        },
+        "price": "€35/month"
+      },
+      "corporate": {
+        "title": "Corporate Interventions",
+        "description": "Wellness sessions in companies, associations and senior residences. Improving quality of life at work.",
+        "features": {
+          "corporate": "Companies",
+          "associations": "Associations",
+          "seniors": "Senior residences",
+          "wellbeing": "Collective well-being"
+        },
+        "price": "Quote on request"
+      }
+    },
+    "choose": "Choose this service",
+    "unsure": {
+      "title": "Not sure which service suits you?",
+      "subtitle": "Let's discuss your goals during a free 15-minute call",
+      "cta": "Free Call"
+    }
+  },
+  "about": {
+    "title": "👤 Who am I?",
+    "titleHighlight": "",
+    "name": "Gilson Mendes",
+    "role": "Certified Fitness Coach",
+    "location": "French Riviera (Côte d'Azur)",
+    "availability": "Available 7 days a week",
+    "hours": "6am - 9pm",
+    "bio": {
+      "p1": "Certified sports coach, passionate about physical transformation and well-being. Former high-level athlete, driven by discipline, the taste for effort and the search for progression, I decided to put my experience and skills at the service of those who want to feel better in their body and mind.",
+      "p2": "My approach: Holistic and personalized, it combines performance, well-being and mental balance for a lasting transformation.",
+      "p3": "Each person is unique and deserves tailor-made support. Whether you want to lose weight, gain muscle or simply feel better in your body, we will find together the method that suits you."
+    },
+    "achievements": {
+      "certifications": {
+        "title": "🎓 Education",
+        "items": ["Bachelor's degree in psychology", "Yoga and Pilates training", "BPJEPS Physical Activities"]
+      },
+      "specializations": {
+        "title": "💪 Specialties",
+        "items": ["Strength training", "Mobility", "Pilates & yoga", "Meditation", "Mental coaching"]
+      },
+      "philosophy": {
+        "title": "🔎 My Approach",
+        "items": ["Body and mind balance in harmony", "Personalization adapted to your goals", "Sustainable and caring transformation"]
+      }
+    },
+    "cta": "Let's Start Together"
+  },
+  "contact": {
+    "title": "Start Your",
+    "titleHighlight": "Transformation",
+    "subtitle": "Ready to reach your goals? Contact me now for a free discovery session.",
+    "form": {
+      "title": "Free Discovery Session",
+      "fields": {
+        "name": "Full name",
+        "email": "Email",
+        "phone": "Phone",
+        "service": "Desired service",
+        "message": "Tell me about your goals",
+        "namePlaceholder": "Your full name",
+        "emailPlaceholder": "your@email.com",
+        "phonePlaceholder": "06 12 34 56 78",
+        "servicePlaceholder": "Select a service",
+        "messagePlaceholder": "Add details: your current level, availability, specific constraints, past experiences..."
+      },
+      "objectives": {
+        "title": "Select your goals (click to add):",
+        "help": "The more specific you are, the better I can tailor a program for you!",
+        "selected": "goal selected",
+        "selectedPlural": "goals selected"
+      },
+      "submit": {
+        "idle": "🚀 Book my free session",
+        "submitting": "⏳ Sending...",
+        "success": "✅ Message sent!",
+        "error": "❌ Error - Try again"
+      }
+    },
+    "objectives": [
+      "💪 Build muscle",
+      "⚖️ Lose weight", 
+      "🏃‍♀️ Improve fitness",
+      "🩹 Recovery after injury",
+      "👰 Prepare for event (wedding, vacation...)",
+      "😌 Reduce stress",
+      "🧘‍♀️ Improve posture",
+      "🔄 Get back to exercise after break",
+      "💯 Gain self-confidence",
+      "🏋️‍♀️ Improve strength",
+      "🎯 Lose belly fat",
+      "✨ Tone my body",
+      "🫁 Improve endurance",
+      "🥗 Fix eating habits",
+      "📅 Get motivated to exercise regularly",
+      "🏆 Reach goals quickly"
+    ],
+    "info": {
+      "title": "Contact Information",
+      "location": {
+        "title": "Location",
+        "lines": ["French Riviera", "Travel possible"]
+      },
+      "phone": {
+        "title": "Phone", 
+        "lines": ["06 17 04 35 99", "Calls & WhatsApp"]
+      },
+      "email": {
+        "title": "Email",
+        "lines": ["gilson.mendes.coach@gmail.com", "Response within 24h"]
+      },
+      "hours": {
+        "title": "Hours",
+        "lines": ["By appointment", "Flexibility according to your needs"]
+      }
+    },
+    "offer": {
+      "title": "🎁 Special Offer",
+      "description": "Free discovery session for all new clients. Complete assessment and personalized program offered!",
+      "features": {
+        "duration": "Duration: 1h",
+        "location": "At home or in gym",
+        "commitment": "No commitment"
+      }
+    },
+    "social": {
+      "title": "📱 Social Media",
+      "description": "Follow my daily advice and transformations"
+    },
+    "map": {
+      "description": "Discover the different places where we can train together. I also travel to your home throughout the French Riviera.",
+      "note": "📍 Travel possible throughout the Côte d'Azur region"
+    }
+  },
+  "map": {
+    "title": "Session locations",
+    "subtitle": "Different training locations available on the French Riviera",
+    "features": "Features",
+    "directions": "Get directions",
+    "locations_count": "available locations",
+    "travel": {
+      "title": "Travel area",
+      "description": "I travel throughout the French Riviera for home sessions. Travel possible throughout the Côte d'Azur."
+    },
+    "locations": {
+      "gym1": {
+        "name": "Outdoor Training Spots",
+        "address": "Beaches and parks - French Riviera",
+        "type": "Outdoor training",
+        "features": ["Beach workouts", "Functional training", "Sea view sessions"]
+      },
+      "park": {
+        "name": "Promenade des Anglais",
+        "address": "Nice, French Riviera",
+        "type": "Outdoor training",
+        "features": ["Running", "Functional exercises", "Seaside training"]
+      },
+      "home": {
+        "name": "Home coaching",
+        "address": "French Riviera (Mouans-Sartoux, Cannes and surroundings)",
+        "type": "Home visits",
+        "features": ["At your place", "Equipment provided", "Flexible"]
+      }
+    }
+  },
+  "footer": {
+    "description": "Your professional fitness coach for sustainable transformation. Together, let's reach your fitness and wellness goals.",
+    "location": "French Riviera",
+    "phone": "06 17 04 35 99",
+    "email": "gilson.mendes.coach@gmail.com",
+    "sections": {
+      "services": "Services",
+      "navigation": "Navigation",
+      "connect": "Stay Connected"
+    },
+    "newsletter": {
+      "description": "Receive my fitness and nutrition tips every week",
+      "placeholder": "Your email",
+      "submit": "OK"
+    },
+    "social": {
+      "title": "Follow me"
+    },
+    "legal": {
+      "mentions": "Legal Notice",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookies"
+    },
+    "copyright": "All rights reserved.",
+    "backToTop": "Back to top"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "save": "Save",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "delete": "Delete",
+    "edit": "Edit",
+    "required": "Required"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Invalid email",
+    "phone": "Invalid phone number",
+    "minLength": "Minimum {{count}} characters",
+    "maxLength": "Maximum {{count}} characters"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
+  },
+  "language": {
+    "french": "Français",
+    "english": "English"
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "subtitle": "Discover the inspiring transformations of my clients and their feedback on my coaching.",
+    "loading": "Loading testimonials...",
+    "filters": {
+      "featured": "Featured",
+      "all": "All",
+      "video": "Videos",
+      "beforeAfter": "Before/After",
+      "fiveStars": "5 stars"
+    },
+    "stats": {
+      "testimonials": "Testimonials",
+      "averageRating": "Average rating",
+      "videos": "Videos",
+      "beforeAfter": "Before/After"
+    },
+    "tags": {
+      "popular": "Popular tags:"
+    },
+    "cta": {
+      "title": "Ready to join my satisfied clients?",
+      "subtitle": "Start your transformation today with personalized coaching and proven results.",
+      "button": "Start my journey"
+    },
+    "modal": {
+      "title": "Detailed testimonial"
+    },
+    "empty": {
+      "title": "No testimonials found",
+      "subtitle": "Try another filter or come back later."
+    },
+    "video": {
+      "play": "Play video",
+      "transcript": "Transcript",
+      "duration": "Duration"
+    },
+    "beforeAfter": {
+      "before": "BEFORE",
+      "after": "AFTER",
+      "instruction": "👆 Drag to compare"
+    },
+    "results": {
+      "title": "Results achieved",
+      "weightLoss": "kg lost",
+      "muscleGain": "kg muscle",
+      "bodyFatReduction": "% body fat",
+      "goals": "Goals achieved:"
+    },
+    "badges": {
+      "verified": "Verified",
+      "featured": "Featured"
+    }
+  },
+  "booking": {
+    "title": "Book a",
+    "titleHighlight": "Session", 
+    "subtitle": "Choose your service, time slot and book online. Instant email confirmation.",
+    "services": {
+      "title": "Choose your service", 
+      "personal": "Individual Training",
+      "duo": "Duo Training",
+      "group": "Group Training"
+    },
+    "datetime": {
+      "date": "Preferred date",
+      "time": "Time slot"
+    },
+    "client": {
+      "title": "Your information",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "notes": "Notes (optional)",
+      "notesPlaceholder": "Goals, constraints, questions...",
+      "suggestions": "Quick suggestions:"
+    },
+    "notesSuggestions": [
+      "🎯 Fitness goal",
+      "🏃‍♀️ Event preparation",
+      "💪 Muscle gain", 
+      "⚖️ Weight loss",
+      "🏃 Marathon/race preparation",
+      "🤕 Post-injury rehabilitation",
+      "🧘 Flexibility improvement",
+      "👥 Couple/family session",
+      "🏋️ Discover weight training",
+      "🍎 Nutrition advice included"
+    ],
+    "submit": "Confirm Booking",
+    "success": "Booking sent successfully!"
+  },
+  "footer": {
+    "brand": {
+      "name": "GILSON MENDES",
+      "description": "Certified fitness coach on the French Riviera. A holistic approach for your physical and mental well-being.",
+      "location": "French Riviera",
+      "phone": "06 17 04 35 99",
+      "email": "gilson.mendes-landim@hotmail.com"
+    },
+    "services": {
+      "title": "Services",
+      "personal": "Individual Training",
+      "group": "Group Training",
+      "online": "Online Programs",
+      "corporate": "Corporate Interventions"
+    },
+    "navigation": {
+      "title": "Navigation", 
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact",
+      "testimonials": "Testimonials"
+    },
+    "newsletter": {
+      "title": "Stay Connected",
+      "description": "Receive my fitness and nutrition tips every week",
+      "placeholder": "Your email",
+      "submit": "OK",
+      "social": "Follow us"
+    },
+    "legal": {
+      "copyright": "All rights reserved.",
+      "terms": "Legal Notice",
+      "conditions": "Terms & Conditions",
+      "privacy": "Privacy Policy", 
+      "cookies": "Cookies"
+    },
+    "backToTop": "Back to top"
+  },
+  "contact": {
+    "title": "Start Your",
+    "titleHighlight": "Transformation",
+    "subtitle": "Ready to reach your goals? Contact me now for a free discovery session.",
+    "form": {
+      "title": "Free Discovery Session",
+      "name": "Full name",
+      "phone": "Phone",
+      "email": "Email",
+      "service": "Desired service",
+      "message": "Message",
+      "messagePlaceholder": "Add details: your current level, availability, specific constraints, past experiences...",
+      "messageHint": "💬 The more specific you are, the better I can propose an adapted program!",
+      "submit": "🚀 Book my free session",
+      "submitting": "⏳ Sending...",
+      "success": "✅ Message sent!",
+      "error": "❌ Error - Try again"
+    },
+    "objectives": [
+      "💪 Build muscle",
+      "⚖️ Lose weight",
+      "🏃‍♀️ Improve fitness",
+      "🩹 Recovery after injury",
+      "👰 Prepare for an event (wedding, vacation...)",
+      "😌 Reduce stress",
+      "🧘‍♀️ Improve posture",
+      "🔄 Get back to sports after a break",
+      "💯 Gain self-confidence",
+      "🏋️‍♀️ Improve strength",
+      "🎯 Lose belly fat",
+      "✨ Tone my body",
+      "🫁 Improve endurance",
+      "🥗 Fix eating habits",
+      "📅 Stay motivated for regular exercise",
+      "🏆 Reach goals quickly"
+    ],
+    "info": {
+      "title": "Contact Information",
+      "offer": {
+        "title": "🎁 Special Offer",
+        "description": "First assessment session 100% free for all new clients. No commitment, discover my method risk-free!",
+        "features": "⭐ Complete assessment • 📋 Personalized plan • 🥗 Nutrition advice"
+      }
+    },
+    "social": {
+      "title": "Social Media",
+      "description": "Follow my tips and discover my clients' transformations"
+    },
+    "map": {
+      "description": "Discover the different places where we can train together. I also travel to your home throughout the Paris region."
+    }
+  },
+  "map": {
+    "title": "Training locations"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Invalid email"
+  }
+}

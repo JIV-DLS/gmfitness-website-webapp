@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle demande - Séance Découverte Gratuite</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f8fafc;
+            padding: 20px;
+        }
+        .container {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .header {
+            background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+        .content {
+            background: white;
+            padding: 30px 20px;
+        }
+        .field-group {
+            margin-bottom: 20px;
+            border-left: 4px solid #4299e1;
+            padding-left: 15px;
+        }
+        .field-label {
+            font-weight: 600;
+            color: #2d3748;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 5px;
+        }
+        .field-value {
+            font-size: 16px;
+            color: #4a5568;
+            word-wrap: break-word;
+        }
+        .message-box {
+            background: #f7fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+            font-style: italic;
+            white-space: pre-wrap;
+        }
+        .footer {
+            background: #2d3748;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #90cdf4;
+            text-decoration: none;
+        }
+        .priority-badge {
+            background: #f56565;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        .contact-actions {
+            background: #edf2f7;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .contact-actions h3 {
+            margin: 0 0 10px 0;
+            color: #2d3748;
+            font-size: 16px;
+        }
+        .contact-actions a {
+            display: inline-block;
+            background: #4299e1;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 6px;
+            margin: 5px 10px 5px 0;
+            font-size: 14px;
+        }
+        .contact-actions a:hover {
+            background: #3182ce;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+            .content, .header, .footer {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎯 Nouvelle Demande de Séance Découverte</h1>
+            <p>Une personne souhaite réserver sa séance gratuite</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <div class="priority-badge">⚡ PRIORITÉ ÉLEVÉE</div>
+            
+            <!-- Client Information -->
+            <div class="field-group">
+                <div class="field-label">👤 Nom complet</div>
+                <div class="field-value">{{name}}</div>
+            </div>
+
+            <div class="field-group">
+                <div class="field-label">📧 Adresse email</div>
+                <div class="field-value">{{email}}</div>
+            </div>
+
+            <div class="field-group">
+                <div class="field-label">📱 Numéro de téléphone</div>
+                <div class="field-value">{{phone}}</div>
+            </div>
+
+            <div class="field-group">
+                <div class="field-label">💪 Service souhaité</div>
+                <div class="field-value">{{service}}</div>
+            </div>
+
+            <!-- Message -->
+            <div class="field-group">
+                <div class="field-label">💬 Message / Objectifs</div>
+                <div class="message-box">{{message}}</div>
+            </div>
+
+            <!-- Contact Actions -->
+            <div class="contact-actions">
+                <h3>Actions rapides :</h3>
+                
+                <!-- Email Templates -->
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; margin-bottom: 15px;">
+                    <a href="mailto:{{email}}?subject=✅ Séance découverte confirmée - Créneaux disponibles&body=Bonjour {{name}},%0D%0A%0D%0AMerci pour votre demande de séance découverte GRATUITE !%0D%0A%0D%0AJ'ai analysé votre demande pour {{service}} et je suis ravi de pouvoir vous accompagner.%0D%0A%0D%0A🗓️ Voici mes disponibilités cette semaine :%0D%0A• Lundi 9h-10h%0D%0A• Mardi 14h-15h%0D%0A• Mercredi 16h-17h%0D%0A• Jeudi 10h-11h%0D%0A• Vendredi 15h-16h%0D%0A%0D%0AQuel créneau vous convient le mieux ?%0D%0A%0D%0A📍 Lieu : [À ADAPTER - Domicile/Plage/Parc selon préférence]%0D%0A⏱️ Durée : 60 minutes%0D%0A💰 Prix : GRATUIT (valeur 80€)%0D%0A%0D%0ACe que nous ferons :%0D%0A• Bilan physique complet (15 min)%0D%0A• Définition de vos objectifs (15 min)%0D%0A• Essai d'exercices adaptés (20 min)%0D%0A• Votre programme personnalisé (10 min)%0D%0A%0D%0AApportez simplement une tenue de sport et une bouteille d'eau !%0D%0A%0D%0AHâte de vous rencontrer et de commencer votre transformation ! 💪%0D%0A%0D%0AÀ très bientôt,%0D%0AGilson Mendes%0D%0ACoach Sportif Diplômé%0D%0A📞 06 17 04 35 99%0D%0A📍 Côte d'Azur" class="contact-btn" style="font-size: 12px; padding: 8px 12px;">
+                        📧 Réponse complète
+                    </a>
+                    
+                    <a href="mailto:{{email}}?subject=🚀 Confirmation rapide - Votre séance découverte&body=Bonjour {{name}},%0D%0A%0D%0AParfait ! Séance découverte confirmée.%0D%0A%0D%0AJe vous appelle dans l'heure pour convenir du créneau.%0D%0A%0D%0AÀ tout de suite !%0D%0AGilson%0D%0A📞 06 17 04 35 99" class="contact-btn" style="font-size: 12px; padding: 8px 12px;">
+                        ⚡ Réponse rapide
+                    </a>
+                    
+                    <a href="mailto:{{email}}?subject=📋 Questionnaire pré-séance - {{name}}&body=Bonjour {{name}},%0D%0A%0D%0AMerci pour votre demande ! Pour optimiser votre séance découverte GRATUITE, j'aimerais mieux vous connaître :%0D%0A%0D%0A1. Quel est votre objectif principal ?%0D%0A2. Avez-vous des blessures ou limitations ?%0D%0A3. Pratiquez-vous déjà une activité sportive ?%0D%0A4. Quel moment vous convient le mieux ? (matin/midi/soir)%0D%0A5. Préférez-vous : domicile / plage / parc ?%0D%0A%0D%0AUne fois ces infos reçues, je vous propose des créneaux personnalisés !%0D%0A%0D%0AMerci et à bientôt,%0D%0AGilson Mendes%0D%0A💪 Coach Sportif Côte d'Azur" class="contact-btn" style="font-size: 12px; padding: 8px 12px;">
+                        📋 Questionnaire
+                    </a>
+                </div>
+                
+                <!-- Communication Channels -->
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <a href="tel:{{phone}}" class="contact-btn">
+                        📞 Appeler
+                    </a>
+                    <a href="https://wa.me/33617043599?text=Bonjour {{name}}, merci pour votre demande de séance découverte gratuite pour {{service}}. Voici mes disponibilités cette semaine : Lundi 9h, Mardi 14h, Mercredi 16h. Quel créneau vous convient ?" class="contact-btn whatsapp-btn">
+                        💬 WhatsApp détaillé
+                    </a>
+                    <a href="sms:{{phone}}&body=Bonjour {{name}}, Gilson Mendes - Coach sportif. Séance découverte GRATUITE confirmée ! Je vous appelle dans l'heure pour le créneau. Merci ! 💪" class="contact-btn" style="background: #34d399;">
+                        📱 SMS
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p><strong>Gilson Mendes - Coach Sportif</strong></p>
+            <p>Côte d'Azur | 📞 06 17 04 35 99</p>
+            <p>
+                <a href="https://jonasvihoaleaniglo.github.io/gmfitness-website/">Site web</a> | 
+                <a href="https://instagram.com/gilsonmendes_coach">Instagram</a> | 
+                <a href="https://youtube.com/@Gilson.Mendes-Fitness">YouTube</a>
+            </p>
+            <hr style="border: none; border-top: 1px solid #4a5568; margin: 15px 0;">
+            <p style="font-size: 12px; opacity: 0.8;">
+                ⏰ Envoyé le {{date}} à {{time}}<br>
+                🌐 Depuis le site GML Fitness
+            </p>
+        </div>
+    </div>
+</body>
+</html>
