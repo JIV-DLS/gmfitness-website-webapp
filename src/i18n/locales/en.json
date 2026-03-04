@@ -39,6 +39,7 @@
     "items": {
       "personal": {
         "title": "Personal Training",
+        "subtitle": "French Riviera",
         "description": "Personalized sessions combining strength, mobility, and mental well-being. Holistic approach adapted to your needs.",
         "features": {
           "custom": "Holistic method",
@@ -46,11 +47,22 @@
           "mobility": "Mobility & Pilates",
           "mindfulness": "Yoga & meditation"
         },
-        "price": "From €50/session",
+        "price": "From €120/session",
         "prices": {
-          "single": "€70/session",
-          "pack5": "€60/session (pack of 5)",
-          "pack10": "€50/session (pack of 10)"
+          "single": "Single session",
+          "singlePrice": "€120",
+          "pack5": "Discovery Pack – 5 sessions",
+          "pack5Price": "€550",
+          "pack10": "Transformation Pack – 10 sessions",
+          "pack10Price": "€1,000",
+          "acc3mois": "3-month accompaniment – Premium",
+          "acc3moisPrice": "€2,100",
+          "acc6mois": "6-month accompaniment – VIP",
+          "acc6moisPrice": "€3,600"
+        },
+        "pricesSimple": {
+          "acc3mois": "3-month accompaniment",
+          "acc6mois": "6-month accompaniment"
         }
       },
       "group": {

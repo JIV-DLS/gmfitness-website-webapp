@@ -39,22 +39,21 @@ export default function BookingForm() {
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          {/* Coaching Individuel */}
+          {/* Coaching Individuel – Côte d'Azur */}
           <div className="bg-white dark:bg-gray-800 rounded-xl p-4 shadow-lg border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all duration-300">
             <div className="text-center">
               <div className="text-4xl mb-4">🏋️‍♂️</div>
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
                 Coaching Individuel
               </h3>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
-                Séance personnalisée 1h
-              </p>
-              <div className="text-2xl font-bold text-azure-600 dark:text-azure-400">
-                70€
+              <p className="text-sm text-azure-600 dark:text-azure-400 mb-4">Côte d'Azur</p>
+              <div className="text-left text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                <div className="flex justify-between"><span>Séance à l'unité</span><span className="font-semibold text-azure-600 dark:text-azure-400">120 €</span></div>
+                <div className="flex justify-between"><span>Pack Découverte – 5 séances</span><span className="font-semibold text-azure-600 dark:text-azure-400">550 €</span></div>
+                <div className="flex justify-between"><span>Pack Transformation – 10 séances</span><span className="font-semibold text-azure-600 dark:text-azure-400">1 000 €</span></div>
+                <div className="flex justify-between"><span>Accompagnement 3 mois – Premium</span><span className="font-semibold text-azure-600 dark:text-azure-400">2 100 €</span></div>
+                <div className="flex justify-between"><span>Accompagnement 6 mois – VIP</span><span className="font-semibold text-azure-600 dark:text-azure-400">3 600 €</span></div>
               </div>
-              <p className="text-sm text-gray-500 dark:text-gray-400 mt-2">
-                60€/5 séances • 50€/10 séances
-              </p>
             </div>
           </div>
 

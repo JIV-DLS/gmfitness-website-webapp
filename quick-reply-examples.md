@@ -191,7 +191,7 @@ Quel moment vous arrange le mieux ?
 
 Déjà la séance découverte est gratuite, donc zéro risque.
 
-Pour la suite, j'ai plusieurs formules à partir de 50€/séance (moins cher qu'un resto !).
+Pour la suite, j'ai plusieurs formules à partir de 120€/séance (moins cher qu'un resto !).
 
 Mais surtout : combien ça coûte de rester comme on est ?
 • Problèmes de dos

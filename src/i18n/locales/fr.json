@@ -39,6 +39,7 @@
     "items": {
       "personal": {
         "title": "Coaching Individuel",
+        "subtitle": "Côte d'Azur",
         "description": "Séances personnalisées alliant renforcement, mobilité et bien-être mental. Approche holistique adaptée à vos besoins.",
         "features": {
           "custom": "Méthode holistique",
@@ -46,11 +47,22 @@
           "mobility": "Mobilité & Pilates",
           "mindfulness": "Yoga & méditation"
         },
-        "price": "À partir de 50€/séance",
+        "price": "À partir de 120 €/séance",
         "prices": {
-          "single": "70€/séance",
-          "pack5": "60€/séance (pack 5)",
-          "pack10": "50€/séance (pack 10)"
+          "single": "Séance à l'unité",
+          "singlePrice": "120 €",
+          "pack5": "Pack Découverte – 5 séances",
+          "pack5Price": "550 €",
+          "pack10": "Pack Transformation – 10 séances",
+          "pack10Price": "1 000 €",
+          "acc3mois": "Accompagnement 3 mois – Premium",
+          "acc3moisPrice": "2 100 €",
+          "acc6mois": "Accompagnement 6 mois – VIP",
+          "acc6moisPrice": "3 600 €"
+        },
+        "pricesSimple": {
+          "acc3mois": "Accompagnement 3 mois",
+          "acc6mois": "Accompagnement 6 mois"
         }
       },
       "group": {

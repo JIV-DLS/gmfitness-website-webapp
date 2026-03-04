@@ -45,7 +45,7 @@ export const SERVICES_DATA: Service[] = [
       'Motivation constante',
       'Résultats rapides'
     ],
-    price: '60€/séance',
+    price: '120€/séance',
     duration: '60 minutes',
     category: SERVICE_CATEGORIES[0],
     isPopular: true,

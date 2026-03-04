@@ -33,7 +33,7 @@
 └─ Age (number)
 
 🏋️ TYPE DE SÉANCE*
-├─ Coaching Individuel (70€)
+├─ Coaching Individuel (120€)
 ├─ Coaching Collectif (25€)
 ├─ Séance Découverte (GRATUITE)
 └─ Programmes en ligne
